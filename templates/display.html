@@ -26,9 +26,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,9 +37,9 @@
                             
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -83,7 +81,24 @@
         </button>
     </div>
 
-<div class="container"><table class="table">
+<div class="container">
+    <div class="border border-dark  my-2">
+    <h3 class="mx-1">To use online face detection follow steps</h3>
+    <ul style="list-style: none;"><li>
+    click start button to start :-   <a class="btn btn-outline-success" href="/startdetectmask" role="button">start</a>
+    </li>
+    <li>
+click stop button to stop :- <a class="btn btn-outline-danger my-2"  href="/stopdetectmask" role="button">stop</a>
+
+    </li>
+    <li>
+       Switch window to see the realtime face detection(alt+tab on windows) an app labeled frame will pop up ,it writes data every 2 seconds so wait . Your webcam must be on  and refer database below to see the result with time. I could have made it more userfriendly but I am lazy , search doesnot work and that's it. Refresh page if result not shown.... 
+    </li>
+</ul>
+</div>
+</div>
+
+<div class="container border"><table class="table">
     <thead>
         <tr>
             <th scope="col">P_id</th>

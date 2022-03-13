@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 import datetime
 from datetime import datetime, timedelta
 from sqlalchemy import func
+from project import *
 
 
 web = Flask(__name__)
@@ -88,6 +89,22 @@ def delete(sno):
     db.session.delete(delete_entry)
     db.session.commit()
     return redirect('/display')
+
+
+@web.route('/startdetectmask')
+def startdetectmask():
+    startfacemaskdetection()
+    print('function started')
+    return redirect('/display')
+    return{'22': 'starting detection minimize browser to see the frame and go back yourself using back button of browser i am lazy'}
+
+
+@web.route('/stopdetectmask')
+def stopdetectmask():
+    eventhandler()
+    print('funtion stopped')
+    return redirect('/display')
+    return{'23': 'stopping detection go back userself using back button of browser'}
 
 
 if __name__ == "__main__":
