@@ -64,23 +64,22 @@ In this project I have used 6500 images both with and without mask and a person 
 To deploy this project run steps :-
 1. Install requirements.txt
 2. Use train.py to train model if another dataset used
-3. project.py is the main project run it with webcam on if no webcam you can use droidcam application
-4. Web.py is the flask framework web application use it to see results in webpage .
+3. project.py is the main project which detects mask to use it start webcam  if no webcam you can use droidcam application
+4. Web.py is the flask framework web application use it to see results in webpage and run project.py.
 5. user.db is the user database 
 6. wearmask.db contains database of mask worn
 ```bash
   Pip install requirements.txt
 ```
-
+To train model
 ```bash
   python train.py
 ```
-```bash
-  python project.py
-```
+web is the main application to run it use
 ```bash
   python web.py
 ```
+
 
 
 ## Tech Stack
