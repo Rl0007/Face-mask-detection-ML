@@ -8,6 +8,11 @@ In this project I have used 6500 images both with and without mask and a person 
 
 ## Demo
 
+### Demo gif
+
+![](https://github.com/Rl0007/Face-mask-detection-ML/blob/main/images/unknown_2022.03.14-09.02_01.gif)
+
+#### Desc :- Press start to start and Stop to stop
 
 ### Without mask
 
